@@ -25,11 +25,11 @@ export const pageAnimation = {
 
 export const titleAnimation = {
   hidden: {
-    x: -200,
+    y: 80,
     opacity: 0,
   },
   show: {
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: {
       duration: 0.7,
