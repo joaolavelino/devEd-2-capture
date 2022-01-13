@@ -50,7 +50,12 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
-      <Movie>
+      <Movie
+        ref={element1}
+        variants={fade}
+        animate={controls1}
+        initial="hidden"
+      >
         <motion.h2 variants={fade}>The Racer</motion.h2>
         <motion.div className="line" variants={lineAnimation}></motion.div>
         <Link to="/work/the-racer">
@@ -63,7 +68,12 @@ const OurWork = () => {
           </Hide>
         </Link>
       </Movie>
-      <Movie>
+      <Movie
+        ref={element2}
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+      >
         <motion.h2 variants={fade}>Good Times</motion.h2>
         <motion.div className="line" variants={lineAnimation}></motion.div>
         <Link to="/work/good-times">
