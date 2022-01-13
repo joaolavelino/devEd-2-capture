@@ -9,6 +9,7 @@ import MovieDetail from "./pages/MovieDetail";
 import OurWork from "./pages/OurWork";
 //Animation
 import { AnimatePresence } from "framer-motion";
+import ScrollTop from "./components/scrollTop";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
           <Route path="/work/:id" element={<MovieDetail />} />
         </Routes>
       </AnimatePresence>
+      <ScrollTop />
     </div>
   );
 }

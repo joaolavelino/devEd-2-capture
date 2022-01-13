@@ -26,6 +26,8 @@ const Nav = () => {
 };
 
 const StyledNav = styled.nav`
+  position: sticky;
+  top: 0;
   z-index: 10;
   min-height: 8vh;
   height: 8vh;
