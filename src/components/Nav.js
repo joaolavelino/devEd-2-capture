@@ -26,7 +26,9 @@ const Nav = () => {
 };
 
 const StyledNav = styled.nav`
+  z-index: 10;
   min-height: 8vh;
+  height: 8vh;
   display: flex;
   margin: auto;
   justify-content: space-between;

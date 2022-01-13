@@ -47,13 +47,13 @@ export const fade = {
 };
 
 export const photoAnimation = {
-  hidden: { scale: 1.5, opacity: 0 },
+  hidden: { scale: 1.5, opacity: 0, transition: { duration: 0.4 } },
   show: {
     scale: 1,
     opacity: 1,
     transition: {
       ease: "easeOut",
-      duration: 0.75,
+      duration: 0.5,
     },
   },
 };
@@ -62,7 +62,7 @@ export const lineAnimation = {
   hidden: { width: "0%" },
   show: {
     width: "100%",
-    transition: { duration: 0.7 },
+    transition: { duration: 0.5 },
   },
 };
 
@@ -80,5 +80,18 @@ export const sliderContainer = {
   show: {
     opacity: 1,
     transition: { staggerChildren: 0.1, ease: "easeOut" },
+  },
+};
+
+export const scrollReveal = {
+  hidden: { opacity: 0, scale: 1.05, transition: { duration: 0.5 } },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.3,
+      ease: "easeInOut",
+      staggerChildren: 0.25,
+    },
   },
 };
