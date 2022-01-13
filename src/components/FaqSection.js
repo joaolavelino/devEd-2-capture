@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Layout, Description, Image, Hide } from "../styles";
+import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
   return (
@@ -8,50 +10,45 @@ const FaqSection = () => {
       <h2>
         Any questions? <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How do I start?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-            debitis.
-          </p>
-        </div>
-      </div>
-      <div className="faq-line"></div>
-      <div className="question">
-        <h4>Daily schedule</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-            debitis.
-          </p>
-        </div>
-      </div>
-      <div className="faq-line"></div>
-      <div className="question">
-        <h4>Different payment methods</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-            debitis.
-          </p>
-        </div>
-      </div>
-      <div className="faq-line"></div>
-      <div className="question">
-        <h4>What products do you offer?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-            debitis.
-          </p>
-        </div>
-      </div>
-      <div className="faq-line"></div>
+      <AnimateSharedLayout>
+        <Toggle title="How do I start?">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+              debitis.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Daily schedule">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+              debitis.
+            </p>
+          </div>
+        </Toggle>
+
+        <Toggle title={"Different payment methods?"}>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+              debitis.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title={"What products do you offer?"}>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+              debitis.
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Faq>
   );
 };
