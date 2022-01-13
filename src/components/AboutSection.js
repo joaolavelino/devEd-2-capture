@@ -8,6 +8,7 @@ import {
   fade,
   photoAnimation,
 } from "../animation";
+import Wave from "./Wave";
 
 const AboutSection = () => {
   return (
@@ -39,6 +40,7 @@ const AboutSection = () => {
           alt="Guy with a camera"
         />
       </Image>
+      <Wave />
     </Layout>
   );
 };
