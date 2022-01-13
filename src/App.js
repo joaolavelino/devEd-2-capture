@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 //import Pages
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import MovieDetail from "./pages/MovieDetail";
 import OurWork from "./pages/OurWork";
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
       <Nav />
       <Routes>
         <Route exact path="/" element={<AboutUs />} />
-        <Route path="/work" element={<OurWork />} />
+        <Route exact path="/work" element={<OurWork />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/work/:id" element={<MovieDetail />} />
       </Routes>
     </div>
   );
