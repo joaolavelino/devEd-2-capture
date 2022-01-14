@@ -9,6 +9,13 @@ export const Layout = styled(motion.div)`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
+  @media screen and (max-width: 1400px) {
+    padding: 2rem 5rem;
+    display: block;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0;
+  }
 `;
 
 export const Description = styled.div`
@@ -16,6 +23,12 @@ export const Description = styled.div`
   padding-right: 5rem;
   h2 {
     font-weight: lighter;
+  }
+  @media screen and (max-width: 1400px) {
+    margin-bottom: 2rem;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 2rem;
   }
 `;
 

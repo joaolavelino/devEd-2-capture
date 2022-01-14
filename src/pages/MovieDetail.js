@@ -58,24 +58,34 @@ const HeadLine = styled.div`
   padding-top: 20vh;
   position: relative;
   h2 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -10%);
   }
   img {
     width: 100%;
     height: 70vh;
     object-fit: cover;
   }
+  @media screen and (max-width: 1400px) {
+    min-height: 60vh;
+    padding-top: 5rem;
+  }
+  @media screen and (max-width: 425px) {
+    min-height: 50vh;
+  }
 `;
 
 const Awards = styled.div`
-  min-height: 80vh;
+  min-height: 30vh;
   display: flex;
-  margin: 5rem 10rem;
+  margin: 2rem;
   align-items: center;
   justify-content: space-around;
+  @media screen and (max-width: 1400px) {
+    padding: 2rem 5rem;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0;
+    display: block;
+  }
 `;
 
 const ImageDisplay = styled.div`
@@ -112,6 +122,17 @@ const StyledAward = styled.div`
   }
   p {
     padding: 2rem 0;
+  }
+  @media screen and (max-width: 1400px) {
+    padding: 2rem;
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 425px) {
   }
 `;
 

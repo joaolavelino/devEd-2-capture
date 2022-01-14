@@ -44,6 +44,10 @@ const StyledNav = styled.nav`
   ul {
     display: flex;
     list-style: none;
+    @media screen and (max-width: 425px) {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
   #logo {
     font-family: "Righteous", sans-serif;
@@ -52,6 +56,17 @@ const StyledNav = styled.nav`
   li {
     padding-left: 5rem;
     position: relative;
+    @media screen and (max-width: 425px) {
+      padding-left: 0;
+      width: 25%;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    height: 15vh;
+    padding: 1rem 4rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
 `;
 

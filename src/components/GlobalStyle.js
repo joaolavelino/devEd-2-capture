@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
   margin:0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body{
@@ -30,10 +31,17 @@ button{
 h2{
   font-weight: lighter;
   font-size:4rem;
+  @media screen and (max-width: 1440px) {
+    font-size: 3rem;
+  }
+  @media screen and (max-width: 425px) {
+    font-size: 2rem;
+  }
 }
 
 h3{
   color: white;
+
 }
 
 h4{
@@ -57,6 +65,8 @@ p{
   font-size:1.4rem;
   line-height: 150%;
 }
+
+
 `;
 
 export default GlobalStyle;

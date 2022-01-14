@@ -80,11 +80,32 @@ const Faq = styled(Layout)`
   .question {
     padding: 3rem 0;
     cursor: pointer;
+    @media screen and (max-width: 425px) {
+      padding: 1rem 0;
+    }
   }
+
   .answer {
     padding: 2rem 0;
     p {
       padding: 1rem 0;
+    }
+    @media screen and (max-width: 425px) {
+      padding: 1rem 0;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    padding: 2rem 5rem;
+    display: block;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 2rem 1rem;
+    font-size: 50%;
+    h4 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
     }
   }
 `;

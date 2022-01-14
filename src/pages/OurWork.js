@@ -97,6 +97,13 @@ const Work = styled(motion.div)`
   h2 {
     padding: 1rem 0;
   }
+  @media screen and (max-width: 1400px) {
+    padding: 2rem 5rem;
+    display: block;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0;
+  }
 `;
 
 const Movie = styled(motion.div)`
@@ -105,12 +112,24 @@ const Movie = styled(motion.div)`
     height: 0.5rem;
     background: #23d997;
     margin-bottom: 3rem;
+    @media screen and (max-width: 1400px) {
+      margin-bottom: 1rem;
+    }
+    @media screen and (max-width: 425px) {
+      margin-bottom: 1rem;
+    }
   }
   img {
     overflow: hidden;
     width: 100%;
     height: 70vh;
     object-fit: cover;
+  }
+  @media screen and (max-width: 1400px) {
+    padding-bottom: 2rem;
+  }
+  @media screen and (max-width: 425px) {
+    padding-bottom: 1rem;
   }
 `;
 

@@ -73,6 +73,13 @@ const Services = styled(Layout)`
     width: 70%;
     padding: 2rem 0 4rem;
   }
+  @media screen and (max-width: 1400px) {
+    padding: 2rem 5rem;
+    display: block;
+  }
+  @media screen and (max-width: 425px) {
+    padding: 0;
+  }
 `;
 
 const Cards = styled(motion.div)`
