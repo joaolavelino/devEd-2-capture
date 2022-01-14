@@ -2,12 +2,7 @@ import React from "react";
 import home1 from "../img/home1.png";
 import { Layout, Description, Image, Hide } from "../styles";
 import { motion } from "framer-motion";
-import {
-  titleAnimation,
-  dreamAnimation,
-  fade,
-  photoAnimation,
-} from "../animation";
+import { titleAnimation, fade, photoAnimation } from "../animation";
 import Wave from "./Wave";
 
 const AboutSection = () => {

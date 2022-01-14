@@ -14,12 +14,10 @@ import {
   lineAnimation,
   slider,
   sliderContainer,
-  scrollReveal,
 } from "../animation";
 import { useScroll } from "../hooks/useScroll";
 
 const OurWork = () => {
-  const [element0, controls0] = useScroll();
   const [element1, controls1] = useScroll();
   const [element2, controls2] = useScroll();
 

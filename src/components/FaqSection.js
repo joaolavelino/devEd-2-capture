@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Layout, Description, Image, Hide } from "../styles";
+import { Layout } from "../styles";
 import Toggle from "./Toggle";
 import { AnimateSharedLayout } from "framer-motion";
 import { scrollReveal } from "../animation";

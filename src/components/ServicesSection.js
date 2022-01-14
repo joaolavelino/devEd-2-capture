@@ -4,7 +4,7 @@ import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import home2 from "../img/home2.png";
-import { Layout, Description, Image, Hide } from "../styles";
+import { Layout, Description, Image } from "../styles";
 import styled from "styled-components";
 //animation
 import { scrollReveal, titleAnimation } from "../animation";
