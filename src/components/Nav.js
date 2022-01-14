@@ -101,10 +101,11 @@ const StyledNav = styled.nav`
   }
 
   @media screen and (max-width: 425px) {
-    height: 15vh;
+    height: 20vh;
     padding: 1rem 4rem;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-around;
   }
 `;
 
